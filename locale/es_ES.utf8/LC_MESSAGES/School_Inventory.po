@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: School Inventory module\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-07 20:42-0500\n"
+"PO-Revision-Date: 2017-06-07 20:42-0500\n"
+"Last-Translator: François Jacquet <info@rosariosis.org>\n"
+"Language-Team: RosarioSIS <info@rosariosis.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: dgettext:2\n"
+"X-Poedit-Basepath: /var/www/github/School_Inventory/\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Menu.php:17 Menu.php:21
+msgid "School Inventory"
+msgstr "Inventorio de la Institución"
+
+#: SchoolInventory.php:319
+msgid "Item"
+msgstr ""
+
+#: SchoolInventory.php:360 SchoolInventory.php:403
+msgid "Category"
+msgstr ""
+
+#: SchoolInventory.php:404
+msgid "Status"
+msgstr ""
+
+#: SchoolInventory.php:405 SchoolInventory.php:518
+msgid "Location"
+msgstr "Ubicación"
+
+#: SchoolInventory.php:407 SchoolInventory.php:536
+msgid "Person"
+msgstr "Persona"
+
+#: SchoolInventory.php:427 SchoolInventory.php:492
+msgid "All Items"
+msgstr "Todos los Elementos"
+
+#: SchoolInventory.php:433
+msgid "Back"
+msgstr "Regresar"
+
+#: SchoolInventory.php:434 SchoolInventory.php:494 SchoolInventory.php:546
+msgid "Save"
+msgstr ""
+
+#: SchoolInventory.php:444
+msgid "Name"
+msgstr ""
+
+#: SchoolInventory.php:445
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: SchoolInventory.php:446
+msgid "File"
+msgstr ""
+
+#: SchoolInventory.php:447
+msgid "Comments"
+msgstr ""
+
+#: SchoolInventory.php:519
+msgid "Locations"
+msgstr "Ubicaciones"
+
+#: SchoolInventory.php:537
+msgid "Persons"
+msgstr "Personas"
+
+#: includes/SchoolInventory.fnc.php:41
+msgid "All"
+msgstr ""
+
+#: includes/SchoolInventory.fnc.php:41
+msgid "N/A"
+msgstr ""
+
+#: includes/SchoolInventory.fnc.php:304
+msgid "Total"
+msgstr ""
+
+#: includes/SchoolInventory.fnc.php:511
+#, php-format
+msgid "Maximum file size: %01.0fMb"
+msgstr ""
+
+#: includes/SchoolInventory.fnc.php:538
+msgid "Photo"
+msgstr "Foto"
+
+#~ msgid "Email not sent to: %s"
+#~ msgstr "Email no enviado a: %s"
+
+#~ msgid "The discpline logs have been sent."
+#~ msgstr "Los historiales disciplinario han sido enviados."
+
+#~ msgid "Send Log to Selected Parents"
+#~ msgstr "Enviar el Historial a los Padres Seleccionados"
+
+#~ msgid "Email Report Cards to Parents"
+#~ msgstr "Enviar los Boletines de Calificaciones a los Padres"
+
+#~ msgid "Email Discipline Log to Parents"
+#~ msgstr "Enviar Historial Disciplinario a los Padres"
+
+#~ msgid "Email Student Balances to Parents"
+#~ msgstr "Enviar los Saldos Estudiante a los Padres"
+
+#~ msgid "The report cards have been sent."
+#~ msgstr "Los boletines de calificaciones han sido enviados."
+
+#~ msgid "Send Report Cards to Selected Parents"
+#~ msgstr "Enviar los Boletines de Calificaciones a los Padres Seleccionados"
+
+#~ msgid "Student Balance"
+#~ msgstr "Saldo Estudiante"
+
+#~ msgid "The student balances have been sent."
+#~ msgstr "Los saldos estudiante han sido enviados."
+
+#~ msgid "Send Balances to Selected Parents"
+#~ msgstr "Enviar los Saldos a los Padres Seleccionados"
+
+#~ msgid "# of Students"
+#~ msgstr "# de Estudiantes"
+
+#~ msgid "# of Administrators"
+#~ msgstr "# de Administradores"
+
+#~ msgid "# of Teachers"
+#~ msgstr "# de Docentes"
+
+#~ msgid "# of Parents"
+#~ msgstr "# de Padres"
+
+#~ msgid "Create Subject PDF for Selected Students"
+#~ msgstr "Crear el PDF Materia para los Estudiantes Seleccionados"
+
+#~ msgid "Example"
+#~ msgstr "Ejemplo"
+
+#~ msgid "Example Widget"
+#~ msgstr "Widget de Ejemplo"
+
+#~ msgid "Setup"
+#~ msgstr "Configuración"
+
+#~ msgid "Example Resource"
+#~ msgstr "Recurso de Ejemplo"
+
+#~ msgid "The configuration value has been modified."
+#~ msgstr "El valor de configuración ha sido modificado."
+
+#~ msgid "Example module Setup"
+#~ msgstr "Configuración del Módulo Ejemplo"
+
+#~ msgid "Try to enter a non-numeric value"
+#~ msgstr "Intente entrar un valor no numerico"
+
+#~ msgid "Example config value label"
+#~ msgstr "Ejemplo de nombre del valor de config"
