@@ -12,8 +12,7 @@ require_once 'includes/SchoolInventory.fnc.php';
 DrawHeader( ProgramTitle() );
 
 // Save.
-if ( isset( $_REQUEST['modfunc'] )
-	&& $_REQUEST['modfunc'] === 'save'
+if ( $_REQUEST['modfunc'] === 'save'
 	&& $_REQUEST['values']
 	&& $_POST['values']
 	&& isset( $_REQUEST['category_id'] )
@@ -119,6 +118,17 @@ if ( isset( $_REQUEST['modfunc'] )
 
 	foreach ( (array) $_REQUEST['values'] as $id => $columns )
 	{
+		if ( isset( $columns['QUANTITY'] ) )
+		{
+			// Sanitize quantity.
+			$value = preg_replace( '/[^0-9.-]/', '', $value );
+
+			if ( ! is_numeric( $value ) )
+			{
+				$value = 1;
+			}
+		}
+
 		if ( $id !== 'new'
 			&& mb_strpos( $id, 'new' ) === false )
 		{
@@ -224,7 +234,7 @@ if ( isset( $_REQUEST['modfunc'] )
 					// Photo.
 					$columns['FILE'] = ImageUpload(
 						'FILE',
-						array( 'width' => 560, 'height' => 560 ),
+						array( 'width' => 600, 'height' => 600 ),
 						$FileUploadsPath . 'SchoolInventory/'
 					);
 				}
