@@ -403,7 +403,7 @@ function MakeSINumberInput( $value, $column )
 
 	if ( $column === 'QUANTITY' )
 	{
-		$extra .= ' min="0" size=3 maxlength=6';
+		$extra .= ' min="0" step="any" size=3 maxlength=6';
 
 		if ( $id !== 'new'
 			&& $value < 1 )
@@ -531,7 +531,7 @@ function MakeSIFileInput( $value, $name )
 
 	if ( in_array( $file_ext, $image_exts ) )
 	{
-		$photo = '<img src="' . $value . '" style="max-width: 280px" />';
+		$photo = '<img src="' . $value . '" style="max-width: 290px" />';
 
 		$button = '<img src="assets/themes/' . Preferences( 'THEME' ) .
 			'/btn/visualize.png" class="button bigger" />';
