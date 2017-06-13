@@ -83,9 +83,10 @@ function GetSICategories( $category_type )
 		return $categories[ $category_type ];
 	}
 
-	$functions = array(
+	// Reactivate custom REMOVE column if N/A / All options.
+	/*$functions = array(
 		'REMOVE' => 'MakeSICategoryRemove',
-	);
+	);*/
 
 	$categories_RET = DBGet( DBQuery( "SELECT CATEGORY_ID,SCHOOL_ID,
 		'' AS REMOVE,TITLE,CATEGORY_TYPE,SORT_ORDER," .
@@ -299,7 +300,7 @@ function SICategoryItemsListOutput( $category_type, $singular, $plural )
 
 	// Display list.
 	$columns = array(
-		'REMOVE' => '',
+		/*'REMOVE' => '',*/
 		'TITLE' => _( $singular ),
 		'TOTAL' => _( 'Total' ),
 	);
@@ -322,6 +323,9 @@ function SICategoryItemsListOutput( $category_type, $singular, $plural )
 	$link['add']['html'] = array(
 		'TITLE' => MakeSITextInput( '', 'TITLE', $category_type ),
 	);
+
+	$link['remove']['link'] = 'Modules.php?modname=' . $_REQUEST['modname'] . '&modfunc=remove';
+	$link['remove']['variables'] = array( 'category_id' => 'CATEGORY_ID' );
 
 	ListOutput(
 		$categories_RET,
