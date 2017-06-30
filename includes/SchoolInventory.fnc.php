@@ -524,7 +524,8 @@ function MakeSIFileInput( $value, $name )
 
 	$id = $THIS_RET['ID'];
 
-	if ( ! $value )
+	if ( ! $value
+		|| isset( $_REQUEST['_ROSARIO_PDF'] ) )
 	{
 		return $value;
 	}
