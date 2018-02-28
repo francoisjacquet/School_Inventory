@@ -80,7 +80,7 @@ CREATE OR REPLACE FUNCTION create_table_school_inventory_categoryxitem() RETURNS
 $func$
 BEGIN
     IF EXISTS (SELECT 1 FROM pg_catalog.pg_tables
-        WHERE schemaname = CURRENT_SCHEMA
+        WHERE schemaname = CURRENT_SCHEMA()
         AND tablename = 'school_inventory_categoryxitem') THEN
     RAISE NOTICE 'Table "school_inventory_categoryxitem" already exists.';
     ELSE
@@ -109,7 +109,7 @@ BEGIN
         SELECT 1 FROM pg_class c
         JOIN pg_namespace n ON n.oid=c.relnamespace
         WHERE c.relname='school_inventory_categoryxitem_ind'
-        AND n.nspname=CURRENT_SCHEMA
+        AND n.nspname=CURRENT_SCHEMA()
     ) THEN
         CREATE INDEX school_inventory_categoryxitem_ind ON school_inventory_categoryxitem (category_id);
     END IF;
@@ -132,7 +132,7 @@ CREATE OR REPLACE FUNCTION create_table_school_inventory_items() RETURNS void AS
 $func$
 BEGIN
     IF EXISTS (SELECT 1 FROM pg_catalog.pg_tables
-        WHERE schemaname = CURRENT_SCHEMA
+        WHERE schemaname = CURRENT_SCHEMA()
         AND tablename = 'school_inventory_items') THEN
     RAISE NOTICE 'Table "school_inventory_items" already exists.';
     ELSE
@@ -190,7 +190,7 @@ BEGIN
         SELECT 1 FROM pg_class c
         JOIN pg_namespace n ON n.oid=c.relnamespace
         WHERE c.relname='school_inventory_items_ind'
-        AND n.nspname=CURRENT_SCHEMA
+        AND n.nspname=CURRENT_SCHEMA()
     ) THEN
         CREATE INDEX school_inventory_items_ind ON school_inventory_items (school_id);
     END IF;
@@ -213,7 +213,7 @@ CREATE OR REPLACE FUNCTION create_table_school_inventory_categories() RETURNS vo
 $func$
 BEGIN
     IF EXISTS (SELECT 1 FROM pg_catalog.pg_tables
-        WHERE schemaname = CURRENT_SCHEMA
+        WHERE schemaname = CURRENT_SCHEMA()
         AND tablename = 'school_inventory_categories') THEN
     RAISE NOTICE 'Table "school_inventory_categories" already exists.';
     ELSE
@@ -269,7 +269,7 @@ BEGIN
         SELECT 1 FROM pg_class c
         JOIN pg_namespace n ON n.oid=c.relnamespace
         WHERE c.relname='school_inventory_categories_ind'
-        AND n.nspname=CURRENT_SCHEMA
+        AND n.nspname=CURRENT_SCHEMA()
     ) THEN
         CREATE INDEX school_inventory_categories_ind ON school_inventory_categories (school_id);
     END IF;
